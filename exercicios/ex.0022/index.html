@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: rgb(231, 11, 11);
+            text-decoration: none;/*--some o traco sublinhado*/
+            font-weight: bold;/*tamanho da font*/
+    
+       
+        }
+        a:visited {
+            color: darkblue;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;/*traco sublinhado dos links*/
+        }
+        a:active {
+            color: #ff0000;/*link fica colorido quando clica nele*/
+        }
+        .especial { /*--link especial*/
+            background-color: aquamarine;
+            color: cadetblue;
+        }
+         .especial::after {
+            content:'←';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(87, 101, 228);
+        }
+        .especial::before{
+            content:'→';
+        }
+        h1 {
+            text-align: center;
+            background-color: aqua;
+            font-weight: 200;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>personalisando links</h1>
+    <ul>
+        <li><a href="https://github.com/romariomk93dev" class="especial">meu github</a></li>
+        <li><a href="https://www.instagram.com/romario.mk93/" target="_blank">meu instagram</a></li>
+        <li><a href="https://www.facebook.com/romario.mk93" target="_blank"> meu facebook</a></li>
+    </ul>
+    
+</body>
+</html>
